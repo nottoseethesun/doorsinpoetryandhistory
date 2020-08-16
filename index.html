@@ -1,0 +1,563 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700&text=%E2%80%9C%E2%80%9D" rel="stylesheet">
+	<title>Books by Chris M. Balz: "Burning the May Tree: The Sacrifice of Jim Morrison"</title>
+	<link rel="canonical" href="https://www.nottotouchthesun.net/doorsinpoetryandhistory/" />
+	<!-- Twitter card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:description" content="See the history of The Doors through the lens of Jim’s poetry. Stanford University R.W. Golden Award winner (Thesis Edition)." />
+	<meta name="description" content="Unlocks the history and significance of the rock band The Doors in terms of Jim Morrison's published poetry. A great way to get started with Jim's poetry and Doors history. The book isn't about The Doors per se, it's about a dynamic in modern culture." />
+	<meta name="twitter:site" content="@christopherbalz" />
+	<meta name="twitter:title" content="&quot;Burning the May Tree&quot;, by Chris Balz" />
+	<meta name="twitter:url" content="https://www.nottotouchthesun.net/doorsinpoetryandhistory/" />
+	<meta name="twitter:image:height" content="330" />
+	<meta name="twitter:image:width" content="247" />
+	<meta name="twitter:image" content="https://www.nottotouchthesun.net/doorsinpoetryandhistory/images/thumb_rts.png" />
+	<!-- Facebook snippet -->
+	<meta property="og:site_name" content="Chris Balz" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.nottotouchthesun.net/doorsinpoetryandhistory/" />
+	<meta property="og:title" content="&quot;Burning the May Tree&quot;, by Chris Balz" />
+	<meta property="og:description" content="See the history of The Doors through the lens of Jim’s poetry. Stanford University R.W. Golden Award winner (Thesis Edition)." />
+	<meta property="og:image" content="https://www.nottotouchthesun.net/doorsinpoetryandhistory/images/thumb_rts.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="./images/favicons/site.webmanifest.json">
+	<link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<style>
+* {
+	font-family: "Open Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	}
+
+body, html, div {
+	height: 100%;
+	width: 100%;
+	margin:0;
+	padding: 0;
+	}
+
+body {
+		overflow-x:hidden;
+	}
+
+h1 {
+	margin: 1.5em 0;
+	}
+
+h2 {
+	margin-top: 2em;
+	}
+p {
+	line-height: 140%;
+	}
+
+
+/* IDs */
+
+#sky, #background, #foreground, #burn, #stage1, #title, #stage2, #sticker {
+	position:absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	}
+
+#background {
+	background: transparent url('./images/dark-background.png') left top no-repeat;
+	background-size: cover;
+	top: -20%;
+	height: 120%;
+	}
+
+#burn {
+	background: transparent url('./images/tree.png') 10%  bottom no-repeat;
+	background-size: 50%;
+	}
+
+#foreground {
+	background: transparent url('./images/light-background.png') left bottom no-repeat;
+	background-size: cover;
+	top:0% !important;
+	height: 100%;
+	}
+
+#sky {
+	background: transparent url('./images/stars.png') left 2% repeat-x;
+	opacity: 5%;
+	background-size: 75%;
+	}
+
+#stage1 {
+	overflow:hidden;
+	height: calc(100% - 32px);
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#323918+0,788244+52 */
+	background: #323918; /* Old browsers */
+	background: -moz-linear-gradient(top, #323918 0%, #788244 52%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #323918 0%,#788244 52%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #323918 0%,#788244 52%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323918', endColorstr='#788244',GradientType=0 ); /* IE6-9 */
+	}
+
+
+#sticker {
+	width: 100px;
+	height: 100px;
+	left: 80%;
+	top: 10%;
+	background: transparent url('./images/sticker-yellow.svg') left top no-repeat;
+	background-size:cover;
+	padding:1em;
+	text-align:center;
+	color:black;
+	transform: rotate(-7.5deg);
+	}
+
+#title {
+	color: white;
+	width: 40%;
+	height: 35%;
+	top: 65%;
+	left: 60%;
+	}
+
+
+/* classes */
+
+.copy {
+	max-width: 850px;
+	margin: auto;
+	}
+
+.cover {
+	float:right;
+	width:35%;
+	height:35%;
+	margin:0 0 1em 2em;
+	background:url(./images/cover.png) left top no-repeat;
+	background-size:cover;
+	box-shadow:0px 2px 2px rgba(0,0,0,0.14);
+	}
+
+.medal {
+	position:absolute;
+	}
+
+.medal-container {
+	height:auto;
+	position:relative;
+	float:left;
+	width:35%;
+	height:340px;
+	margin-bottom: 2em;
+	}
+
+.medal-copy {
+	float: left;
+	width: 65%;
+	}
+
+.reviews {
+	height:auto;
+	float:none;
+	position:relative;
+	width:65%;
+	clear:both;
+	width:100%;
+	}
+
+.subtitle {
+	font-weight: 300;
+	font-size: 24px;
+	color: rgba(255,255,255,0.8) !important;
+	}
+
+.top {
+	margin-left: -1em;
+	margin-bottom: -1em;
+	margin-top: 1em;
+	}
+
+.open-quote, .quote, .close-quote, .attribution {
+	height: auto;
+	width: auto;
+	max-width: 650px;
+	margin: 0 2em;
+	text-align: left;
+	}
+
+.close-quote, .open-quote {
+	font-family: "comfortaa";
+	font-weight: 700;
+	font-size: 64px;
+	opacity: 0.25;
+	height: 16px;
+	text-align: left;
+	margin-left: 40px;
+	color: #F6A13E;
+	}
+
+.open-quote {
+	margin-bottom: 0em;
+	}
+
+.quote {
+	margin-top: 1.5em;
+	}
+
+.close-quote {
+	margin: .25em 0 0 60px;
+	}
+
+.attribution {
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1.5px;
+	text-align: left;
+	margin-top:.5em;
+	}
+
+
+
+/* tags */
+
+a {
+	color: #F6A13E;
+	text-decoration: none;
+	}
+
+a:hover {
+	text-decoration: underline;
+	}
+
+
+@media (max-height:500px) and (min-width:800px){
+#foreground {
+	background-position: left -20%;
+
+
+	}
+
+#title {
+	top: 45%;
+	}
+
+}
+
+
+@media (max-height:800px) and (max-width:800px){
+#foreground {
+	top:-25% !important;
+	height: 125%;
+
+
+	}
+
+}
+
+
+@media (max-width: 880px) {
+/* mobile */
+#burn {
+	background-size: 80%;
+	top: -20%;
+	height: 100%;
+	}
+
+#background {
+	top: -20%;
+	height: 120%;
+	}
+
+#foreground {
+	top:-40% !important;
+	height: 140%;
+	}
+
+#stage2 h1 {
+	font-size: 20px;
+	}
+
+#stage2 h2 {
+	font-size: 24px;
+	}
+
+#stage1 h1 {
+	margin: 0.5em 0 .75em 0;
+	}
+
+#stage1 h3 {
+	margin-top: .5em;
+	}
+
+#sticker {
+	left: 60%;
+	top: 20%;
+}
+
+#title {
+	width: 90%;
+	left:5%;
+	top: auto;
+	bottom: 1em;
+	height: auto;
+	text-align:right;
+	}
+
+#title h1 {
+	font-size: 1.5em;
+	}
+
+#title p {
+	font-size: .8em;
+	}
+
+.medal-copy {
+	width: 100%;
+	}
+
+.subtitle {
+	font-size: 1em;
+	}
+
+#stage2 {
+	padding:1em;
+	}
+
+#stage2 h1 {
+	width: calc(100% - 2em);
+}
+
+.cover {
+	height: 200px;
+	width: 200px;
+	margin-right: 2em;
+	}
+
+p {
+	width: calc(100% - 2em);
+	}
+
+.reviews {
+	height:auto;
+	clear:both;
+	float:left;
+	position:relative;
+	width:auto;
+	}
+
+.medal-container {
+	clear: both;
+	}
+
+
+}
+
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+	#sticker {
+		width: 80px;
+		height: 80px;
+		left: auto;
+		right: 20px;
+		top: 10px;
+		background: transparent url('./images/sticker-yellow.svg') left top no-repeat;
+		background-size:cover;
+		padding:1em;
+		text-align:center;
+		color:black;
+		transform: rotate(-7.5deg);
+	}
+
+	#sticker p {
+		font-size: 12px !important;
+		padding:0 !important;
+	}
+	#sticker p span {
+		font-size: 10px !important;
+	}
+	#burn {
+		background-size: 40%;
+		top: -10%;
+		height: 110%;
+		}
+
+	#background {
+		top: -30%;
+		height: 130%;
+		}
+
+	#foreground {
+		top:-80% !important;
+		height: 180%;
+		}
+	#title h1, #title h3 {
+		padding: 0 0 0 2em;
+
+	}
+
+	#title .subtitle {
+		padding: 0 2em 0 0;
+
+	}
+
+	#title p {
+		font-size: 11px !important;
+		padding: 0 2em 0 0;
+	}
+
+	#title {
+		line-height: 130% !important;
+		top: 35% !important;
+		text-align: right !important;
+	}
+	.more {
+		display: none;
+	}
+p {
+	width: calc(100% - 6em);
+	padding: 0 2em;
+	}
+
+	.cover {
+		margin:0 2em 1em 2em;
+
+	}
+
+	.reviews, .medal-copy h2, #stage2 h1, h4 {
+		padding: 0 2em;
+
+	}
+
+ }
+
+
+
+	</style>
+</head>
+
+<body>
+<div id="stage1" style="border:0px solid blue;">
+	<div id="sky"></div>
+	<div id="background"></div>
+	<div id="foreground"></div>
+	<div id="burn"></div>
+	<div id="sticker"><p style="margin-top:0.25em;font-size:14px;width:100%;">Stanford University<br>R.W. Golden Award Winner<br><span style="font-size:12px;color:rgba(0,0,0,0.5);">Thesis Edition</span></p></div>
+	<div id="title">
+		<h1>Burning the May Tree</h1>
+		<div class="subtitle" style="height: auto;margin-top:-15px;">The Sacrifice of Jim Morrison</div>
+		<h3 style="margin-bottom:0em;">by Chris M. Balz</h3>
+		<p style="color: rgba(255,255,255,0.8) !important; font-weight: 300;width:100%;">Available on <a
+			target="fromBurningTheMayTreeBook"
+			href="https://books.apple.com/us/book/id1463302951">Apple</a>, <a
+			target="fromBurningTheMayTreeBook"
+			href="https://www.barnesandnoble.com/w/burning-the-may-tree-christopher-m-balz/1131243264">Nook</a>, <a
+			target="fromBurningTheMayTreeBook"
+			href="https://www.amazon.com/dp/B07Q4M53VP">Amazon</a>, <a
+			target="fromBurningTheMayTreeBook"
+			href="https://play.google.com/store/books/details/Chris_M_Balz_Burning_the_May_Tree_The_Sacrifice_of?id=pbaPDwAAQBAJ">Google</a>, and <a
+			target="fromBurningTheMayTreeBook"
+			href="https://www.kobo.com/us/en/ebook/burning-the-may-tree-the-sacrifice-of-jim-morrison-1">Kobo</a></p>
+		<p style="color: rgba(255,255,255,0.8) !important; font-weight: 300;width:100%;">Also in paperback at <a
+			target="fromBurningTheMayTreeBook"
+			href="https://www.amazon.com/Burning-May-Tree-Sacrifice-Consciousness/dp/1733923713/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">Amazon.com</a></p>
+	</div>
+</div>
+<div class="more" role="button" onclick="document.querySelector('#stage2').scrollIntoView({behavior: 'smooth'})" style="height:64px;background:#EC7A2D;position:absolute;bottom:-32px;left:0;cursor:pointer;text-align:center; width:100%;text-align:center;position:absolute;color:white;"><p style="margin:2px;opacity:0.8;">MORE<img style="vertical-align:baseline;margin-bottom:-5px;" src="./images/arrow.svg" alt="Arrow" /></p></div>
+<div id="stage2" style="top:100%;height:auto;position:relative;padding-top:2em;">
+	<div class="copy">
+	<h1>Burning the May Tree: The Sacrifice of Jim Morrison</h1>
+	<h4>Sixth Edition, April 2019</h4>
+	<div style="" class="cover"></div>
+	<p>by Chris M. Balz (Author). Edited by Glenn Edward Smith (Editor) and Jay Scrivner (Assistant Editor). Illustrations by Forrest Gray.</p>
+	<p>Unlocks the history and significance of the rock band The Doors in terms of Jim Morrison's published poetry. A great way to get started with Jim's poetry and Doors history. The book isn't about The Doors per se, it's about a dynamic in modern culture.  The Doors just were the first, best example of it.  The idea is to let The Doors become a bridge to understanding that more vague-seeming subject.</p>
+
+	<p>Buy now from <a
+		target="fromBurningTheMayTreeBook"
+		href="https://books.apple.com/us/book/id1463302951">Apple</a>, <a
+		target="fromBurningTheMayTreeBook"
+		href="https://www.barnesandnoble.com/w/burning-the-may-tree-christopher-m-balz/1131243264">Nook</a>, <a
+		target="fromBurningTheMayTreeBook"
+		href="https://www.amazon.com/dp/B07Q4M53VP">Amazon</a>, <a
+		target="fromBurningTheMayTreeBook"
+		href="https://play.google.com/store/books/details/Chris_M_Balz_Burning_the_May_Tree_The_Sacrifice_of?id=pbaPDwAAQBAJ">Google</a>, and <a
+		target="fromBurningTheMayTreeBook"
+		href="https://www.kobo.com/us/en/ebook/burning-the-may-tree-the-sacrifice-of-jim-morrison-1">Kobo</a>.</p>
+	<p>Also in paperback at <a
+		target="fromBurningTheMayTreeBook"
+		href="https://www.amazon.com/Burning-May-Tree-Sacrifice-Consciousness/dp/1733923713/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">Amazon.com</a></p>
+	<div class="reviews">
+		<h2>Reviews</h2>
+		<div style="font:300 12px Roboto;margin-top:-1.5em;margin-bottom: 1em;letter-spacing:2.5px;text-transform:uppercase;">thesis edition</div>
+			<div class="open-quote">&ldquo;</div>
+			<div class="quote">Congratulations on winning the Robert Golden Award for your wonderful
+				thesis&hellip;<br> I was delighted with the paper.</div>
+			<div class="attribution">- Frank Lisciandro, Editor of "Wilderness" and "The American Night"</div>
+
+			<div class="quote">. . . This essay is outstanding for its intellectually adventurous thrust, its commitment to
+				l’imaginaire social, and its profound sense of responsibility.</div>
+			<div class="attribution">- Ewart A. C. Thomas, Dean of Humanities and Sciences, June 16, 1990,
+				Stanford University</div>
+			<div class="close-quote">&rdquo;</div>
+
+			<div style="font:300 12px Roboto;margin-top:3em;margin-bottom: 1em;letter-spacing:2.5px;text-transform:uppercase;">First edition</div>
+			<div class="open-quote">&ldquo;</div>
+			<div class="quote">Great Book! Truly A Must Have For Any Real Doors Fan!</div>
+			<div class="attribution">- ebay reader</div>
+
+			<div class="quote">This is very eye-opening. Thanks I'll prob read it a couple more times&hellip;</div>
+			<div class="attribution">- ebay reader</div>
+
+			<div class="quote">Thank you for a truly fascinating read!</div>
+			<div class="attribution">- ebay reader</div>
+
+			<div class="quote">A wonderful read&hellip; thanks from TX</div>
+			<div class="attribution">- ebay reader</div>
+
+			<div class="quote">Great book</div>
+			<div class="attribution">- ebay reader</div>
+
+			<div class="close-quote">&rdquo;</div>
+		</div>
+		<div class="medal-copy" style="height:auto;">
+			<h2>Robert M. Golden Medal for Excellence</h2>
+			<p>Stanford University's Robert M. Golden Medal for Excellence in the Humanities and Creative Arts recognizes outstanding achievement in the humanities
+			and the creative arts.</p>
+		</div>
+		<div class="medal-container">
+			<img src="./images/medal-front.png" style="top:100px;left:80px;z-index:3" class="medal" alt="Medal front" />
+			<img src="./images/medal-back.png" class="medal" alt="Medal back" />
+		</div>
+		<div style="clear:both;max-width:650px;height:auto;">
+			<div class="open-quote">&ldquo;</div>
+  			<p>In order to understand the significance of Morrison as a figure in the history of mass culture, one must understand his central message, and the best cornerstone of such an understanding is a grasp of his poetic works.</p>
+			<div class="close-quote">&rdquo;</div>
+			<div class="attribution" style="margin-top: 1em;">- "burning the may tree"</div>
+				<p>Buy now from <a
+					target="fromBurningTheMayTreeBook"
+					href="https://books.apple.com/us/book/id1463302951">Apple</a>, <a
+					target="fromBurningTheMayTreeBook"
+					href="https://www.barnesandnoble.com/w/burning-the-may-tree-christopher-m-balz/1131243264">Nook</a>, <a
+					target="fromBurningTheMayTreeBook"
+					href="https://www.amazon.com/dp/B07Q4M53VP">Amazon</a>, <a
+					target="fromBurningTheMayTreeBook"
+					href="https://play.google.com/store/books/details/Chris_M_Balz_Burning_the_May_Tree_The_Sacrifice_of?id=pbaPDwAAQBAJ">Google</a>, and <a
+					target="fromBurningTheMayTreeBook"
+					href="https://www.kobo.com/us/en/ebook/burning-the-may-tree-the-sacrifice-of-jim-morrison-1">Kobo</a></p>
+				<p style="margin: 0 0 3em 0;">Also in paperback at <a
+					target="fromBurningTheMayTreeBook"
+					href="https://www.amazon.com/Burning-May-Tree-Sacrifice-Consciousness/dp/1733923713/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">Amazon.com</a></p>
+			</div>
+		</div>
+		<div class="top" role="button" onclick="document.querySelector('#stage1').scrollIntoView({behavior: 'smooth'})" style="position:relative;clear:both;height:32px;background:#323918;cursor:pointer;text-align:center; width:calc(100% + 1em);text-align:center;color:white;">
+			<p style="margin:2px;opacity:0.8;">TOP<img style="vertical-align:baseline;margin-bottom:-5px;transform:rotate(180deg);" src="./images/arrow.svg" alt="Arrow" /></p>
+		</div>
+	</div>
+</body>
+</html>
