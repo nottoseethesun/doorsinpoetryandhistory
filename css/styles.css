@@ -10,7 +10,7 @@ body, html, div {
 	margin:0;
 	padding: 0;
 	}
-	
+
 body {
 		overflow-x:hidden;
 	}
@@ -18,15 +18,15 @@ body {
 h1 {
 	margin: 1.5em 0;
 	}
-	
+
 h2 {
 	margin-top: 2em;
 	}
 p {
 	line-height: 140%;
 	}
-	
-	
+
+
 /* IDs */
 
 #sky, #background, #foreground, #burn, #stage1, #title, #stage2, #sticker {
@@ -43,7 +43,7 @@ p {
 	top: -20%;
 	height: 120%;
 	}
-	
+
 #burn {
 	background: transparent url('../images/tree.png') 10%  bottom no-repeat;
 	background-size: 50%;
@@ -55,7 +55,7 @@ p {
 	top:0% !important;
 	height: 100%;
 	}
-	
+
 #sky {
 	background: transparent url('../images/stars.png') left 2% repeat-x;
 	opacity: 5%;
@@ -72,7 +72,7 @@ p {
 	background: linear-gradient(to bottom, #323918 0%,#788244 52%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323918', endColorstr='#788244',GradientType=0 ); /* IE6-9 */
 	}
-	
+
 
 #sticker {
 	width: 100px;
@@ -86,16 +86,16 @@ p {
 	color:black;
 	transform: rotate(-7.5deg);
 	}
-	
+
 #title {
 	color: white;
 	width: 40%;
-	height: 35%; 
-	top: 65%;
+	height: 35%;
+	top: 50%;
 	left: 60%;
 	}
 
-	
+
 /* classes */
 
 .copy {
@@ -116,7 +116,7 @@ p {
 .medal {
 	position:absolute;
 	}
-	
+
 .medal-container {
 	height:auto;
 	position:relative;
@@ -125,12 +125,12 @@ p {
 	height:340px;
 	margin-bottom: 2em;
 	}
-	
+
 .medal-copy {
 	float: left;
 	width: 65%;
 	}
-	
+
 .reviews {
 	height:auto;
 	float:none;
@@ -145,12 +145,12 @@ p {
 	font-size: 24px;
 	color: rgba(255,255,255,0.5) !important;
 	}
-	
+
 .top {
 	margin-left: -1em;
 	margin-bottom: -1em;
 	}
-	
+
 .open-quote, .quote, .close-quote, .attribution {
 	height: auto;
 	width: auto;
@@ -173,7 +173,7 @@ p {
 .open-quote {
 	margin-bottom: 0em;
 	}
-	
+
 .quote {
 	margin-top: 1.5em;
 	}
@@ -187,11 +187,11 @@ p {
 	font-size: 12px;
 	letter-spacing: 1.5px;
 	text-align: left;
-	margin-top:.5em;	
+	margin-top:.5em;
 	}
-	
 
-	
+
+
 /* tags */
 
 a {
@@ -207,28 +207,28 @@ a:hover {
 @media (max-height:500px) and (min-width:800px){
 #foreground {
 	background-position: left -20%;
-	
+
 
 	}
-	
+
 #title {
 	top: 45%;
 	}
 
 }
 
-	
+
 @media (max-height:800px) and (max-width:800px){
 #foreground {
 	top:-25% !important;
 	height: 125%;
-	
+
 
 	}
 
 }
-	
-	
+
+
 @media (max-width: 880px) {
 /* mobile */
 #burn {
@@ -236,17 +236,17 @@ a:hover {
 	top: -20%;
 	height: 100%;
 	}
-	
+
 #background {
 	top: -20%;
 	height: 120%;
 	}
-	
+
 #foreground {
 	top:-40% !important;
 	height: 140%;
 	}
-	
+
 #stage2 h1 {
 	font-size: 20px;
 	}
@@ -258,11 +258,11 @@ a:hover {
 #stage1 h1 {
 	margin: 0.5em 0 .75em 0;
 	}
-	
+
 #stage1 h3 {
 	margin-top: .5em;
 	}
-	
+
 #sticker {
 	left: 60%;
 	top: 20%;
@@ -276,7 +276,7 @@ a:hover {
 	height: auto;
 	text-align:right;
 	}
-	
+
 #title h1 {
 	font-size: 1.5em;
 	}
@@ -284,11 +284,11 @@ a:hover {
 #title p {
 	font-size: .8em;
 	}
-	
+
 .medal-copy {
 	width: 100%;
 	}
-	
+
 .subtitle {
 	font-size: 1em;
 	}
@@ -296,17 +296,17 @@ a:hover {
 #stage2 {
 	padding:1em;
 	}
-	
+
 .cover {
 	height: 200px;
 	width: 200px;
 	margin-right: 2em;
 	}
-	
+
 p {
 	width: calc(100% - 2em);
 	}
-	
+
 .reviews {
 	height:auto;
 	clear:both;
@@ -314,7 +314,7 @@ p {
 	position:relative;
 	width:auto;
 	}
-	
+
 .medal-container {
 	clear: both;
 	}
