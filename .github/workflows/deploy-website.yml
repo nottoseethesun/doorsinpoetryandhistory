@@ -14,9 +14,9 @@ jobs:
     - name: rsync deployments
       uses: burnett01/rsync-deployments@4.1
       with:
-        switches: -avzr --exclude .git
+        switches: -avzr --exclude .git .github
         path: ./
-        remote_path: nottotouchthesun_net/doorsinpoetryandhistory/dist/
+        remote_path: nottotouchthesun_net/doorsinpoetryandhistory/
         remote_host: kontar.kattare.com
         remote_user: cbalzpersonal
         remote_key: ${{ secrets.NOTTOTOUCHTHESUN }}
