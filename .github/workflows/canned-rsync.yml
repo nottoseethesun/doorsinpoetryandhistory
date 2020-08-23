@@ -19,5 +19,5 @@ jobs:
         remote_path: nottotouchthesun_net/doorsinpoetryandhistory/dist/
         remote_host: kontar.kattare.com
         remote_user: cbalzpersonal
-        remote_key: ${{ secrets.DEPLOY_KEY }}
+        remote_key: ${{ secrets.NOTTOTOUCHTHESUN }}
         
