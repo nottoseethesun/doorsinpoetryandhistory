@@ -14,7 +14,7 @@ jobs:
     - name: rsync deployments
       uses: burnett01/rsync-deployments@4.1
       with:
-        switches: -avzr --delete
+        switches: -avzr --exclude .git
         path: ./
         remote_path: nottotouchthesun_net/doorsinpoetryandhistory/dist/
         remote_host: kontar.kattare.com
