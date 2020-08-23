@@ -1,7 +1,7 @@
 
 # This is a basic workflow that is manually triggered
-  
-- name: Deploy to the nottotouchthesun server
+
+name: Deploy to the nottotouchthesun server
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -20,4 +20,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: rsync
-      run: rsync -avz --exclude ".git" ./ cbalzpersonal@kontar.kattare.com:nottotouchthesun_net/doorsinpoetryandhistory/dist/
+      run: rsync -avz --exclude ".git" $GITHUB_WORKSPACE/ cbalzpersonal@kontar.kattare.com:nottotouchthesun_net/doorsinpoetryandhistory/dist/
