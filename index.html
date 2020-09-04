@@ -79,27 +79,49 @@ p {
 	}
 
 #background {
-	background: transparent url('./images/dark-background.png') left top no-repeat;
-	background-size: cover;
+	background-size: cover !important;
 	top: -20%;
 	height: 120%;
 	}
+
+.webp #background {
+	background: transparent url('./images/dark-background.webp') left top no-repeat;
+}
+
+.no-webp #background, .no-js #background {
+	background: transparent url('./images/dark-background.png') left top no-repeat;
+}
 
 #burn {
 	background: transparent url('./images/tree.png') 10%  bottom no-repeat;
 	background-size: 50%;
 	}
+	
+.webp #burn {
+	background: transparent url('./images/tree.webp') 10%  bottom no-repeat;
+	}
+
+.no-webp #burn, .no-js #burn {
+	background: transparent url('./images/tree.png') 10%  bottom no-repeat;
+	}
 
 #foreground {
-	background: transparent url('./images/light-background.png') left bottom no-repeat;
-	background-size: cover;
+	background-size: cover !important;
 	top:0% !important;
 	height: 100%;
 	}
 
+.webp #foreground {
+	background: transparent url('./images/light-background.webp') left bottom no-repeat;
+	}
+
+.no-webp #foreground, .no-js #foreground {
+	background: transparent url('./images/light-background.png') left bottom no-repeat;
+	}
+
 #sky {
 	background: transparent url('./images/stars.png') left 2% repeat-x;
-	opacity: 5%;
+	opacity: 65%;
 	background-size: 75%;
 	}
 
@@ -113,7 +135,6 @@ p {
 	background: linear-gradient(to bottom, #323918 0%,#788244 52%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323918', endColorstr='#788244',GradientType=0 ); /* IE6-9 */
 	}
-
 
 #sticker {
 	width: 100px;
@@ -136,7 +157,6 @@ p {
 	left: 60%;
 	}
 
-
 /* classes */
 
 .copy {
@@ -147,12 +167,13 @@ p {
 .cover {
 	float:right;
 	width:35%;
-	height:35%;
 	margin:0 0 1em 2em;
-	background:url(./images/cover.png) left top no-repeat;
-	background-size:cover;
-	box-shadow:0px 2px 2px rgba(0,0,0,0.14);
 	}
+	
+.cover img {
+	width: 100%;
+	box-shadow:0px 2px 2px rgba(0,0,0,0.14);
+}
 
 .medal {
 	position:absolute;
@@ -231,7 +252,6 @@ p {
 	text-align: left;
 	margin-top:.5em;
 	}
-
 
 
 /* tags */
