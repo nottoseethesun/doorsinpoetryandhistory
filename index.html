@@ -585,8 +585,16 @@ p {
 			and the creative arts.</p>
 		</div>
 		<div class="medal-container">
-			<img src="./images/medal-front.png" style="top:100px;left:80px;z-index:3" class="medal" alt="Medal front" />
+			<picture>
+  				<source srcset="./images/medal-front.webp" type="image/webp" alt="Medal front">
+  				<source srcset="./images/medal-front.png" type="image/png" alt="Medal front"> 
+				<img src="./images/medal-front.png" style="top:100px;left:80px;z-index:3" class="medal" alt="Medal front" />
+			</picture>
+			<picture>
+  				<source srcset="./images/medal-back.webp" type="image/webp" alt="Medal back">
+  				<source srcset="./images/medal-back.png" type="image/png" alt="Medal back"> 
 			<img src="./images/medal-back.png" class="medal" alt="Medal back" />
+			</picture>
 		</div>
 		<div style="clear:both;max-width:650px;height:auto;">
 			<div class="open-quote">&ldquo;</div>
