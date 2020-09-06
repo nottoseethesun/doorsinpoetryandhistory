@@ -1,7 +1,15 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<script>
+	  document.documentElement.classList.remove("no-js");
+	</script>
+    <script>
+    /*! modernizr 3.6.0 (Custom Build) | MIT *
+ 	* https://modernizr.com/download/?-webp-setclasses !*/
+		!function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+    </script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700&text=%E2%80%9C%E2%80%9D" rel="stylesheet">
 	<title>Books by Chris M. Balz: "Burning the May Tree: The Sacrifice of Jim Morrison"</title>
@@ -71,27 +79,49 @@ p {
 	}
 
 #background {
-	background: transparent url('./images/dark-background.png') left top no-repeat;
-	background-size: cover;
+	background-size: cover !important;
 	top: -20%;
 	height: 120%;
 	}
+
+.webp #background {
+	background: transparent url('./images/dark-background.webp') left top no-repeat;
+}
+
+.no-webp #background, .no-js #background {
+	background: transparent url('./images/dark-background.png') left top no-repeat;
+}
 
 #burn {
 	background: transparent url('./images/tree.png') 10%  bottom no-repeat;
 	background-size: 50%;
 	}
 
+.webp #burn {
+	background: transparent url('./images/tree.webp') 10%  bottom no-repeat;
+	}
+
+.no-webp #burn, .no-js #burn {
+	background: transparent url('./images/tree.png') 10%  bottom no-repeat;
+	}
+
 #foreground {
-	background: transparent url('./images/light-background.png') left bottom no-repeat;
-	background-size: cover;
+	background-size: cover !important;
 	top:0% !important;
 	height: 100%;
 	}
 
+.webp #foreground {
+	background: transparent url('./images/light-background.webp') left bottom no-repeat;
+	}
+
+.no-webp #foreground, .no-js #foreground {
+	background: transparent url('./images/light-background.png') left bottom no-repeat;
+	}
+
 #sky {
 	background: transparent url('./images/stars.png') left 2% repeat-x;
-	opacity: 5%;
+	opacity: 65%;
 	background-size: 75%;
 	}
 
@@ -105,7 +135,6 @@ p {
 	background: linear-gradient(to bottom, #323918 0%,#788244 52%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323918', endColorstr='#788244',GradientType=0 ); /* IE6-9 */
 	}
-
 
 #sticker {
 	width: 100px;
@@ -128,7 +157,6 @@ p {
 	left: 60%;
 	}
 
-
 /* classes */
 
 .copy {
@@ -139,12 +167,13 @@ p {
 .cover {
 	float:right;
 	width:35%;
-	height:35%;
 	margin:0 0 1em 2em;
-	background:url(./images/cover.png) left top no-repeat;
-	background-size:cover;
-	box-shadow:0px 2px 2px rgba(0,0,0,0.14);
 	}
+
+.cover img {
+	width: 100%;
+	box-shadow:0px 2px 2px rgba(0,0,0,0.14);
+}
 
 .medal {
 	position:absolute;
@@ -223,7 +252,6 @@ p {
 	text-align: left;
 	margin-top:.5em;
 	}
-
 
 
 /* tags */
@@ -397,14 +425,13 @@ p {
 		top:-80% !important;
 		height: 180%;
 		}
+		
 	#title h1, #title h3 {
 		padding: 0 0 0 2em;
-
 	}
 
 	#title .subtitle {
 		padding: 0 2em 0 0;
-
 	}
 
 	#title p {
@@ -417,6 +444,7 @@ p {
 		top: 35% !important;
 		text-align: right !important;
 	}
+	
 	.more {
 		display: none;
 	}
@@ -427,12 +455,10 @@ p {
 
 	.cover {
 		margin:0 2em 1em 2em;
-
 	}
 
 	.reviews, .medal-copy h2, #stage2 h1, h4 {
 		padding: 0 2em;
-
 	}
 
  }
@@ -515,17 +541,19 @@ p {
 	<div class="reviews">
 		<h2>Reviews</h2>
 			<div class="open-quote">&ldquo;</div>
+
 			<div class="quote">Every time I pick up the new edition of "Burning The May Tree",
 				I discover a thought or idea about Jim’s poetry that strikes me as unique and insightful.
 				Yours is the only book to shine a focused, intelligent and critical light on Morrison’s writing.</div>
 			<div class="attribution">- Frank Lisciandro, Editor of "Wilderness" and "The American Night"</div>
+
 			<div class="close-quote">&rdquo;</div>
 
 			<div style="font:300 12px Roboto;margin-top: 2em; margin-bottom: 1em;letter-spacing:2.5px;text-transform:uppercase;">thesis edition</div>
 			<div class="open-quote">&ldquo;</div>
 			<div class="quote">. . . This essay is outstanding for its intellectually adventurous thrust, its commitment to
 				l’imaginaire social, and its profound sense of responsibility.</div>
-			<div class="attribution">- Ewart A. C. Thomas, Dean of Humanities and Sciences, June 16, 1990,
+			<div class="attribution">- Ewart A. C. Thomas, Dean of Humanities and Sciences,
 				Stanford University</div>
 			<div class="quote">Congratulations on winning the Robert Golden Award for your wonderful
 				thesis&hellip;<br> I was delighted with the paper.</div>
