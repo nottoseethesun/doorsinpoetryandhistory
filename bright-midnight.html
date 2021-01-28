@@ -3,6 +3,8 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Bright Midnight: Home for Fans of "Burning the May Tree"</title>
 
     <link
@@ -104,6 +106,7 @@
       }
 
       body {
+        background-color: #8ea2a9;
         overflow-x: hidden;
       }
 
@@ -114,6 +117,7 @@
       h2 {
         margin-top: 2em;
       }
+
       p {
         line-height: 140%;
       }
@@ -121,24 +125,34 @@
       /* ids and classes */
 
       #background-container {
+        position: fixed;
+        overflow-x: hidden;
         background: url(images/vision-of-bright-midnight.jpg) no-repeat;
-        background-size: contain;
-        height: 100%;
-        max-width: 700px;
-        padding: 1em;
-        font-size: 0.8rem;
+        background-size: cover;
+        max-width: 780px;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+				/* padding bottom doesn't work here */
+        font-size: 1.3em;
+      }
+
+      #background-container p {
+        margin-right: 3em;
       }
     </style>
   </head>
 
   <body>
     <div id="background-container">
-      <h1 style="text-align: center">Bright Midnight</h1>
+      <h1>Bright Midnight</h1>
       <div style="height: fit-content; text-align: center; font-style: italic">
-        Home of Fans of the Book,<br />
-        <a href="https://www.nottotouchthesun.net/doorsinpoetryandhistory/"
-          >"Burning the May Tree: The Sacrifice of Jim Morrison"</a
-        >
+        <p style="padding: 0">
+          Home of Fans of the Book,<br />
+          <a href="https://www.nottotouchthesun.net/doorsinpoetryandhistory/"
+            >"Burning the May Tree: The Sacrifice of Jim Morrison"</a
+          >
+        </p>
       </div>
       <h2>Appeal</h2>
       <p>
@@ -146,21 +160,28 @@
         of the book that encourages people to buy the book!
       </p>
       <h2>Community</h2>
-      Hang out with others on
-      <a href="https://groups.io/g/burningthemaytree">the discussion group</a>!
+      <p>
+        Hang out with others on
+        <a href="https://groups.io/g/burningthemaytree">the discussion group</a
+        >!
+      </p>
       <h2>Author Homepage</h2>
-      Check out the author's blog posts and q & a on the
-      <a href="https://www.goodreads.com/author/show/19325191.Chris_Balz"
-        >Author Homepage</a
-      >.
+      <p>
+        Check out the author's blog posts and q & a on the
+        <a href="https://www.goodreads.com/author/show/19325191.Chris_Balz"
+          >Author Homepage</a
+        >.
+      </p>
       <h2>Podcasts</h2>
-      <ol>
+      <ol style="padding-bottom: 3em;">
         <li>
-          <a
-            href="http://brooklynfitchick.com/2020/07/not-fade-away-the-poetry-of-jim-morrison-ep-11-author-chris-balz/"
-            >Not Fade Away: The Poetry of Jim Morrison (Ep 11) Author Chris
-            Balz</a
-          >
+          <p>
+            <a
+              href="http://brooklynfitchick.com/2020/07/not-fade-away-the-poetry-of-jim-morrison-ep-11-author-chris-balz/"
+              >Not Fade Away: The Poetry of Jim Morrison (Ep 11) Author Chris
+              Balz</a
+            >
+          </p>
         </li>
       </ol>
     </div>
