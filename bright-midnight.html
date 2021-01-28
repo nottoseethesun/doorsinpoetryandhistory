@@ -125,7 +125,7 @@
       /* ids and classes */
 
       #background-container {
-        position: fixed;
+        position: fixed; /* Only way to stop horizontal scroll on iOS. */
         overflow-x: hidden;
         background: url(images/vision-of-bright-midnight.jpg) no-repeat;
         background-size: cover;
@@ -133,7 +133,7 @@
         padding-left: 2em;
         padding-right: 2em;
         padding-top: 1em;
-				/* padding bottom doesn't work here */
+				/* padding bottom doesn't work here; had to add it on last block element */
         font-size: 1.3em;
       }
 
@@ -173,7 +173,7 @@
         >.
       </p>
       <h2>Podcasts</h2>
-      <ol style="padding-bottom: 3em;">
+      <ol style="padding-bottom: 16em;">
         <li>
           <p>
             <a
