@@ -96,6 +96,14 @@ p {
 	background: transparent url('./images/tree.png') 10%  bottom no-repeat;
 	background-size: 50%;
 	}
+	
+.webp #burn {
+	background: transparent url('./images/tree.webp') 10%  bottom no-repeat;
+	}
+
+.no-webp #burn, .no-js #burn {
+	background: transparent url('./images/tree.png') 10%  bottom no-repeat;
+	}
 
 .webp #burn {
 	background: transparent url('./images/tree.webp') 10%  bottom no-repeat;
@@ -169,6 +177,11 @@ p {
 	width:35%;
 	margin:0 0 1em 2em;
 	}
+	
+.cover img {
+	width: 100%;
+	box-shadow:0px 2px 2px rgba(0,0,0,0.14);
+}
 
 .cover img {
 	width: 100%;
@@ -508,7 +521,13 @@ p {
 	<div class="copy">
 	<h1>Burning the May Tree: The Sacrifice of Jim Morrison</h1>
 	<h4>Sixth Edition, April 2019</h4>
-	<div style="" class="cover"></div>
+	<div class="cover">
+		<picture>
+  			<source srcset="./images/cover.webp" type="image/webp" alt="Image of book cover">
+  			<source srcset="./images/cover.jpg" type="image/jpeg" alt="Image of book cover"> 
+  			<img src="./images/cover.jpg" alt="Image of book cover">
+		</picture>
+	</div>
 	<p>by Chris M. Balz (Author). Edited by Glenn Edward Smith (Editor) and Jay Scrivner (Assistant Editor). Illustrations by Forrest Gray.</p>
 	<p>Unlocks the history and significance of the rock band The Doors in terms of Jim Morrison's published poetry. A great way to get started with Jim's poetry and Doors history. The book isn't about The Doors per se, it's about a dynamic in modern culture.  The Doors just were the first, best example of it.  The idea is to let The Doors become a bridge to understanding that more vague-seeming subject.</p>
 
@@ -585,8 +604,16 @@ p {
 			and the creative arts.</p>
 		</div>
 		<div class="medal-container">
-			<img src="./images/medal-front.png" style="top:100px;left:80px;z-index:3" class="medal" alt="Medal front" />
+			<picture>
+  				<source srcset="./images/medal-front.webp" type="image/webp" alt="Medal front">
+  				<source srcset="./images/medal-front.png" type="image/png" alt="Medal front"> 
+				<img src="./images/medal-front.png" style="top:100px;left:80px;z-index:3" class="medal" alt="Medal front" />
+			</picture>
+			<picture>
+  				<source srcset="./images/medal-back.webp" type="image/webp" alt="Medal back">
+  				<source srcset="./images/medal-back.png" type="image/png" alt="Medal back"> 
 			<img src="./images/medal-back.png" class="medal" alt="Medal back" />
+			</picture>
 		</div>
 		<div style="clear:both;max-width:650px;height:auto;">
 			<div class="open-quote">&ldquo;</div>
