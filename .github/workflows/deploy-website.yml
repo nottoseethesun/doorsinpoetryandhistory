@@ -1,5 +1,5 @@
 name: Deploy Website
-  
+
 on:
   push:
     branches:
@@ -16,8 +16,7 @@ jobs:
       with:
         switches: -avzr --exclude '.git*'
         path: ./
-        remote_path: nottotouchthesun_net/doorsinpoetryandhistory/
+        remote_path: burningthemaytree_com
         remote_host: kontar.kattare.com
         remote_user: cbalzpersonal
         remote_key: ${{ secrets.NOTTOTOUCHTHESUN }}
-        
